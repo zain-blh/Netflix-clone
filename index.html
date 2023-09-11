@@ -11,8 +11,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
+
+    <span class="scroll-to-top"><ion-icon name="arrow-up-outline"></ion-icon></span>
+
     <section class="main-section">
       <div class="overlay">
         <div class="header">
@@ -26,7 +37,14 @@
             </a>
           </div>
           <div class="signin-btn">
-            <a href="#" id="modal-trigger" download="assets/img/tv.png" onclick="openPopup()"> Sign In </a>
+            <a
+              href="#"
+              id="modal-trigger"
+              download="assets/img/tv.png"
+              onclick="openPopup()"
+            >
+              Sign In
+            </a>
           </div>
         </div>
         <div class="banner">
@@ -41,11 +59,23 @@
             </p>
           </div>
           <div class="banner-btn">
-            <form action="#" id="myForm" onsubmit="return validateForm()" method="get">
-            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address" id="email" required/>
-            <button href="#" type="submit">Get Started <i class="fa-sharp fa-solid fa-arrow-right"></i
-            ></button>
-          </form>
+            <form
+              action="#"
+              id="myForm"
+              onsubmit="return validateForm()"
+              method="get"
+            >
+              <input
+                type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                placeholder="Email Address"
+                id="email"
+                required
+              />
+              <button href="#" type="submit">
+                Get Started <i class="fa-sharp fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -58,7 +88,12 @@
         <div class="popup-modal">
           <div class="popup-modal-header">
             <h4>Sign In</h4>
-            <span style="cursor: pointer;" class="close-btn" onclick="closePopup()"><i class="fa-solid fa-xmark"></i></span>
+            <span
+              style="cursor: pointer"
+              class="close-btn"
+              onclick="closePopup()"
+              ><i class="fa-solid fa-xmark"></i
+            ></span>
           </div>
           <div class="popup-modal-body">
             <form action="">
@@ -103,11 +138,10 @@
       <div class="watch-on-tv">
         <img src="assets/img/tv.png" alt="" />
         <video autoplay="" playsinline="" muted="" loop="">
-          <source src="assets/img/netflix video.m4v" >
+          <source src="assets/img/netflix video.m4v" />
         </video>
-<!-- 
+        <!-- 
         <video autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video> -->
-
       </div>
     </section>
 
@@ -143,8 +177,7 @@
       </div>
       <div class="watch-anywhere-img">
         <img src="assets/img/watch anywhere.jpg" alt="" />
-        <div class="watch-anyhwere-video">
-        </div>
+        <div class="watch-anyhwere-video"></div>
       </div>
     </section>
 
@@ -167,174 +200,207 @@
       </div>
     </section>
 
-   <!-- section end -->
+    <!-- section end -->
 
     <section class="asked-question">
       <div class="asked-question-body">
-      <div class="aked-question-title">
-         <h2>Frequently Asked Questions</h2>
+        <div class="aked-question-title">
+          <h2>Frequently Asked Questions</h2>
         </div>
         <div class="faq-list">
-       <ul class="accordian"> 
-        <li>
-          <input type="radio" name="accordian" id="first">
-          <label for="first">What is Netflix?</label>
-          <div class="content">
-            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+          <ul class="accordian">
+            <li>
+              <input type="radio" name="accordian" id="first" />
+              <label for="first">What is Netflix?</label>
+              <div class="content">
+                <p>
+                  Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries, and more
+                  on thousands of internet-connected devices. You can watch as
+                  much as you want, whenever you want without a single
+                  commercial – all for one low monthly price. There's always
+                  something new to discover and new TV shows and movies are
+                  added every week!
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="radio" name="accordian" id="second" />
+              <label for="second">How much does Netflix cost?</label>
+              <div class="content">
+                <p>
+                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range
+                  from Rs250 to Rs1,100 a month. No extra costs, no contracts.
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="radio" name="accordian" id="third" />
+              <label for="third">Where can I watch?</label>
+              <div class="content">
+                <p>
+                  Watch anywhere, anytime. Sign in with your Netflix account to
+                  watch instantly on the web at netflix.com from your personal
+                  computer or on any internet-connected device that offers the
+                  Netflix app, including smart TVs, smartphones, tablets,
+                  streaming media players and game consoles. You can also
+                  download your favorite shows with the iOS, Android, or Windows
+                  10 app. Use downloads to watch while you're on the go and
+                  without an internet connection. Take Netflix with you
+                  anywhere.
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="radio" name="accordian" id="fourth" />
+              <label for="fourth">How do I cancel?</label>
+              <div class="content">
+                <p>
+                  Netflix is flexible. There are no pesky contracts and no
+                  commitments. You can easily cancel your account online in two
+                  clicks. There are no cancellation fees – start or stop your
+                  account anytime.
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="radio" name="accordian" id="fifth" />
+              <label for="fifth">What can I watch on Netflix?</label>
+              <div class="content">
+                <p>
+                  Netflix has an extensive library of feature films,
+                  documentaries, TV shows, anime, award-winning Netflix
+                  originals, and more. Watch as much as you want, anytime you
+                  want.
+                </p>
+              </div>
+            </li>
+            <li>
+              <input type="radio" name="accordian" id="sixth" />
+              <label for="sixth">Is Netflix good for Kids?</label>
+              <div class="content">
+                <p>
+                  The Netflix Kids experience is included in your membership to
+                  give parents control while kids enjoy family-friendly TV shows
+                  and movies in their own space. Kids profiles come with
+                  PIN-protected parental controls that let you restrict the
+                  maturity rating of content kids can watch and block specific
+                  titles you don’t want kids to see.
+                </p>
+              </div>
+            </li>
+          </ul>
 
-              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+          <div class="faq-subscribe">
+            <div class="asked-question-txt">
+              <p>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
+            </div>
+            <form class="asked-question-btn">
+              <input
+                type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                placeholder="Email Address"
+                required
+              />
+              <button href="">
+                GET STARTED <i class="fa-sharp fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
           </div>
-          </li>
-          <li>
-            <input type="radio" name="accordian" id="second">
-          <label for="second">How much does Netflix cost?</label>
-          <div class="content">
-            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs250 to Rs1,100 a month. No extra costs, no contracts.</p>
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="accordian" id="third">
-          <label for="third">Where can I watch?</label>
-          <div class="content">
-            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-
-              You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="accordian" id="fourth">
-          <label for="fourth">How do I cancel?</label>
-          <div class="content">
-            <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="accordian" id="fifth">
-          <label for="fifth">What can I watch on Netflix?</label>
-          <div class="content">
-            <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="accordian" id="sixth">
-          <label for="sixth">Is Netflix good for Kids?</label>
-          <div class="content">
-            <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
-
-              Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
-          </div>
-        </li>
-       </ul>
-        
-       <div class="faq-subscribe">
-        <div class="asked-question-txt">
-          <p>Ready to watch? Enter your email to create or restart your membership.</p>
         </div>
-        <form class="asked-question-btn">
-          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
-          placeholder="Email Address" required>
-          <button href="">GET STARTED  <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-        </form>
-      </div>
-    </div>
       </div>
     </section>
 
     <!--  faq section end -->
 
-     <section class="footer">
-           <div class="footer-title">
-            <h4>Question? Contact us.</h4>
-           </div>
-           <div class="footer-links">
-            <ul>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Help Center</a></li>
-              <li><a href="">Account</a></li>
-              <li><a href="">Media Center</a></li>
-              <li><a href="">Investor Relations</a></li>
-              <li><a href="">Jobs</a></li>
-              <li><a href="">Ways to watch</a></li>
-              <li><a href="">Terms of use</a></li>
-              <li><a href="">Privacy</a></li>
-              <li><a href="">Cookie Prefrence</a></li>
-              <li><a href="">Corporate Information</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">Speed Test</a></li>
-              <li><a href="">Legal Notices</a></li>
-              <li><a href="">Only on Netflix</a></li>
-            </ul>
-            <div class="footer-bottom">
-              <h4>Netflix pakistan</h4>
-            </div>
-           </div>
-     </section>
+    <section class="footer">
+      <div class="footer-title">
+        <h4>Question? Contact us.</h4>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Help Center</a></li>
+          <li><a href="">Account</a></li>
+          <li><a href="">Media Center</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Ways to watch</a></li>
+          <li><a href="">Terms of use</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Cookie Prefrence</a></li>
+          <li><a href="">Corporate Information</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Speed Test</a></li>
+          <li><a href="">Legal Notices</a></li>
+          <li><a href="">Only on Netflix</a></li>
+        </ul>
+        <div class="footer-bottom">
+          <h4>Netflix pakistan</h4>
+        </div>
+      </div>
+    </section>
 
+    <script>
+      //   let Popup = document.getElementById("popup");
 
+      //   function openPopup(){
+      //       Popup.classList.add("active");
+      //   }
+      //   function closePopup(){
+      //       Popup.classList.remove("active");
+      //   }
 
+      // let visible = document.querySelector("#visible");
 
-<script>
-  //   let Popup = document.getElementById("popup");
-    
-  //   function openPopup(){
-  //       Popup.classList.add("active");
-  //   }
-  //   function closePopup(){
-  //       Popup.classList.remove("active");
-  //   }
+      // function openFaq(){
+      //   visible.classList.add('faq-answer-open');
+      // }
 
-  // let visible = document.querySelector("#visible");
+      // function openFaq(){
+      //   visible.classList.remove('faq-answer-open');
+      // }
 
-  // function openFaq(){
-  //   visible.classList.add('faq-answer-open');
-  // }
-   
-  // function openFaq(){
-  //   visible.classList.remove('faq-answer-open');
-  // }
+      // const signinBtn = document.querySelector("#modal-trigger");
+      // const PopupModalWrapper = document.querySelector(".popup-modal-wrapper");
+      // const popupModal = document.querySelector(".popup-modal");
+      // const closeBtn = document.querySelectorAll("close-btn");
 
-  // const signinBtn = document.querySelector("#modal-trigger");
-  // const PopupModalWrapper = document.querySelector(".popup-modal-wrapper");
-  // const popupModal = document.querySelector(".popup-modal");
-  // const closeBtn = document.querySelectorAll("close-btn");
-  
-  // closeBtn.forEach((close) => {
-  //    close.addEventListener('click', () => {
-  //       close.parentElement.remove('active');
-  //       if(popupModal.classList.contains('disbale')){
-  //         popupModal.classList.remove('disable');
-  //       }
-  //    })
-  // })
+      // closeBtn.forEach((close) => {
+      //    close.addEventListener('click', () => {
+      //       close.parentElement.remove('active');
+      //       if(popupModal.classList.contains('disbale')){
+      //         popupModal.classList.remove('disable');
+      //       }
+      //    })
+      // })
 
+      // signinBtn.addEventListener('click', () => {
+      //    PopupModalWrapper.classList.add('active');
+      //    popupModal.classList.add('active');
+      // })
 
-  // signinBtn.addEventListener('click', () => {
-  //    PopupModalWrapper.classList.add('active');
-  //    popupModal.classList.add('active');
-  // })
+      let Popup = document.querySelector("#popup");
 
+      function openPopup() {
+        Popup.classList.add("active");
+      }
+      function closePopup() {
+        Popup.classList.remove("active");
+      }
 
-  let Popup = document.querySelector('#popup');
+      function validateForm() {
+        let email = document.getElementById("email").value;
 
-  function openPopup(){
-     Popup.classList.add('active');
-  }
-  function closePopup(){
-    Popup.classList.remove('active');
-  }
-
-
-  function validateForm(){
-    let email = document.getElementById("email").value;
-
-    if(email == ""){
-      document.getElementById("extratxt").innerHTML = "E-mail is required";
-      return false;
-    }
-  }
-
-</script>
-
-
+        if (email == "") {
+          document.getElementById("extratxt").innerHTML = "E-mail is required";
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>

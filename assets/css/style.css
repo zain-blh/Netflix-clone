@@ -764,3 +764,15 @@ video {
   border: none;
   outline: none;
 }
+
+span.scroll-to-top {
+  position: fixed;
+  background: #888;
+  top: 50%;
+  z-index: 1;
+  right: 40px;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
